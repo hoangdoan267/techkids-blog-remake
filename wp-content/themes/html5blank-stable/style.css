@@ -291,6 +291,13 @@ html{
 }
 body{
 	background-color: #f6f6f6;
+	margin-top: 65px;
+}
+
+@media (min-width: 768px) {
+	body {
+		margin-top: 102px;
+	}
 }
 
 .header_menu_list ul li a{
