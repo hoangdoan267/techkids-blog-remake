@@ -3,7 +3,7 @@
 	<main role="main">
 	<!-- section -->
 	<section>
-
+	<?php echo "Test branch code" ?>
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 		<!-- article -->
