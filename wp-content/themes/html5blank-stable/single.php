@@ -9,7 +9,7 @@
 				
 			</div>
 			<div class="col-sm-4">
-				<!-- Sidebar -->
+				<?php echo "Hello World"; ?>
 			</div>
 		</div>
 	</div>
