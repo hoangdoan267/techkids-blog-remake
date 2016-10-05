@@ -74,35 +74,13 @@ input:focus {
 \*------------------------------------*/
 
 /* wrapper */
-.wrapper {
+/*.wrapper {
 	max-width:1280px;
 	width:95%;
 	margin:0 auto;
 	position:relative;
-}
+}*/
 /* header */
-.header {
-
-}
-/* logo */
-.logo {
-
-}
-.logo-img {
-
-}
-/* nav */
-.nav {
-
-}
-/* sidebar */
-.sidebar {
-
-}
-/* footer */
-.footer {
-
-}
 
 /*------------------------------------*\
     PAGES
@@ -305,3 +283,323 @@ a img.aligncenter {
 		page-break-after:avoid;
 	}
 }
+
+
+/* CSS BEGIN  */
+html{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+body{
+	background-color: #f6f6f6;
+}
+
+.header_menu_list ul li a{
+	color: #737373;
+}
+.header_menu_list ul li a:hover{
+  background-color: #ffffff;
+  color: #5c67fc;
+}
+
+.home_header li a{
+	color: #f0eded;
+}
+.home_header li a:hover{
+	color: #ffffff;
+  background-color: #000000;
+}
+.black_bg{
+	background: #000000;
+}
+.white_bg{
+	background: #ffffff;
+
+}
+.header_icon{
+	margin: 0;
+	min-height: 30px;
+}
+.header_icon button{
+	font-size: 20px;
+	margin: 0;
+	padding-top: 17px;
+}
+.navbar-brand img{
+  max-height: 31px;
+  width: auto;
+}
+.header_menu_list{
+	padding-left: 20px;
+	font-size: 1.8rem;
+}
+
+.Catolary_Title img{
+	max-width: 6em;
+}
+
+.Catolary_from_register{
+	background: #00a1ed;
+	text-align: center;
+	padding: 25px 15px;
+  color: #ffffff;
+}
+.Catolary_from_register input{
+  color: #000000;
+}
+.Catolary_Title_User{
+	border-top: 1px solid #00a1ed;
+	padding: 10px 0;
+	max-width: 100%;
+}
+
+.Catolary_from_register button{
+	background-color: #ff803c;
+	margin-top: 10px;
+	border: 0 none;
+	border: 1px solid #ff803c;
+}
+.Catolary_from_register input{
+	max-width: 100%;
+}
+.Catolary_from_register button:hover{
+	color: #ff803c;
+	border: 1px solid #ff803c;
+	background-color: #ffffff;
+}
+.PageRecentCatolary{
+	margin-top: 10px;
+}
+.circle p{
+	position:relative;
+	left: 10px;
+	top: 10px;
+}
+.Detail_human li {
+	white-space: nowrap;
+}
+.Detail_human img{
+	float: left;
+	margin-bottom: 10px;
+}
+
+.list_socical{
+	margin: 0;
+    padding: 0;
+    min-height: 20px
+}
+.list_socical i{
+	font-size: 22px;
+	text-align: left;
+}
+.twitter{
+	color: #00a1ed;
+}
+.google{
+	color: #ed0006;
+	margin: 0 5px 0 5px;
+}
+.facebook{
+	color: #007bed;
+}
+.Detail_content img{
+  max-width: 100%;
+}
+.NewPost {
+    margin-top: 20px;
+}
+
+.NewPost img{
+  max-width: 100%;
+}
+.Detail_content{
+	border-top: 1px solid #000000;
+  text-align: left;
+}
+.Detail_content_in{
+	margin-top: 10px;
+}
+.Detail_content_in p{
+	text-align: left;
+	margin-top: 10px;
+}
+.Detail_content_Noteimg p{
+	text-align: center;
+}
+.Detail_content_img3{
+	margin-top: 30px;
+}
+.Detail_content_img3 img{
+	float: left;
+	margin-right: 10px;
+	max-width: 60%;
+}
+.NewPost_Title{
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.NewPost_content{
+	border-top: 1px solid #00a1ed;
+}
+.NewPost_content_posts{
+	margin-top: 10px;
+}
+.NewPost_content_posts img{
+	margin: 0 auto;
+}
+
+
+.footer_logo{
+    margin: 15px 10px;
+    max-width: 90%;
+}
+
+.footer h5{
+	font-size: 1.8rem;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+.footer ul{
+	padding-left: 20px;
+}
+
+.footer .socials_list{
+    font-size: 2.3rem;
+}
+
+.socials_list a:hover, .socials_list a:focus {
+    color: #000;
+    text-decoration: none;
+}
+.socials_list a {
+    color: #333;
+}
+.footer_text h5{
+	text-align: left;
+}
+.footer_text ul li{
+	text-align: left;
+}
+.footer_text p{
+	text-align: left;
+}
+.scrollToTop{
+	text-align:center;
+	background-color:#00b3f6;
+	font-weight: bold;
+	color: #f8f8f8;
+	position:fixed;
+	top:430px;
+	right:40px;
+    border-radius: 100%;
+    display: none;
+    border: none;
+    z-index: 1;
+    height: 50px;
+    width: 50px;
+    font-size: 3rem;
+}
+
+.scrollToTop:focus{
+    outline: 0 none;
+}
+
+.scrollToTop:hover{
+	text-decoration:none;
+}
+
+
+.sticky_bottom_footer h4{
+    display: inline-block;
+    margin-left: 1%;
+    margin-right: 2%;
+    font-weight: bold;
+    padding: 1%;
+}
+
+.register:hover{
+    color: #f05c1e;
+    background-color: #ffffff;
+    border: 1px solid #f05c1e;
+}
+
+.sticky_bottom_footer #close{
+    float: right;
+    color:white;
+    font-weight: 900;
+    font: arial;
+    background-color: #F05C1E;
+    border: 0px;
+}
+
+.mobile_bottom_footer .container{
+    text-align: center;
+    background-color: #f6efef;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.slick-slide:focus{
+  outline: 0 none;
+}
+
+.slick-dots{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.slick-dots li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.slick-dots li button{
+  border: 0 none;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #4d4d4d;
+  display: block;
+  font-size: 0;
+}
+
+.slick-dots li.slick-active button,
+.slick-dots li button:active{
+  background: #6eb4b8;detail
+  Ơ
+ }
+@media screen and (min-width: 1024px){
+.PageRecentCatolary{
+	margin-top: 50px;
+}
+#header{
+	border: 0 none;
+}
+.header_menu_list{
+	padding-left: 140px;
+	font-size: 1.8rem;
+}
+.PageRecentCatolary_catogory{
+  margin-top: 155px;
+}
+.Catolary_Title img{
+	max-width: 10em;
+}
+.list_socical {
+	font-size: 22px;
+	text-align: right;
+}
+.Detail_catogory{
+  position: relative;
+  top:-45px;
+}
+
+}
+
+/* CSS END */
+
+
