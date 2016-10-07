@@ -32,6 +32,7 @@
 				<?php endwhile; endif; ?>
 			</div>
 				<?php get_sidebar(); ?>
+				<?php get_newest_posts(3);?>
 		</div>
 	</div>
 <?php get_footer(); ?>

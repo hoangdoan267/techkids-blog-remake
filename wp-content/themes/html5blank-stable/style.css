@@ -379,6 +379,13 @@ body{
 }
 /* Single page end */
 
+/*Recent posts module*/
+
+.newpost-title{
+	border-bottom: 1px solid #00a1ed;
+}
+/*End recent posts module*/
+
 /* Side bar */
 .sidebar{
 	display: none;
