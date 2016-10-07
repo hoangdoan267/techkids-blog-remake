@@ -351,7 +351,7 @@ body{
 }
 
 .single-page-wrapper {
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 /* Single page begin */
@@ -444,8 +444,80 @@ body{
 	}
 }
 
+
+
 /* Side bar end */
 
 /* CSS END */
 
+/* Category Page */
+.banner {
+	text-align: center;
+}
 
+.group-title-wrapper {
+	width: 100%;
+	border-bottom: 1px solid #00a1ed;
+}
+
+.group-title {
+	color: #ffffff;
+	background-color: #00a1ed;
+	padding: 5px;
+	position: relative;
+	width: 80%;
+	text-transform: uppercase;
+	text-align: center;
+	left: 10%;
+}
+
+.group-title:after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 50px solid #f6f6f6;
+	border-left: 50px solid transparent;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.group-title:before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 50px solid #f6f6f6;
+	border-right: 50px solid transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@media (min-width: 768px) {
+	.group-title {
+		left: 0;
+		width: 50%;
+		text-align: left;
+		padding-left: 20px;
+	}
+
+	.group-title:before{
+		display: none;
+	}
+}
+
+@media (min-width: 1000px) {
+	.group-title {
+		width: 38%;
+	}
+}
+
+.category-list {
+	margin-top: 20px;
+}
+
+.category-article-item + .category-article-item {
+	margin-bottom: 20px;
+	clear: right;
+}
+/*Category Page */
