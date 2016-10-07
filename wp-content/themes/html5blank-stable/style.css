@@ -355,15 +355,22 @@ body{
 }
 
 /* Single page begin */
+.social-info {
+/*	border-bottom: 1px solid #000000;*/
+	padding-bottom: 5px;
+}
+
 .author-detail {
 	margin-bottom: 10px;
 }
 
+.author-detail img {
+	border-radius: 100%;
+	vertical-align: middle;
+}
+
 .social-list{
-	font-size: 22px;
-    text-align: right;
-	margin-top: 5px;
-	padding-right: 0px;
+	font-size: 30px;
 }
 
 .twitter {
@@ -377,14 +384,14 @@ body{
 .facebook{
 	color: #007bed;
 }
+
+.article-content img {
+	display: block;
+	margin: 0 auto;
+}
 /* Single page end */
 
-/*Recent posts module*/
 
-.newpost-title{
-	border-bottom: 1px solid #00a1ed;
-}
-/*End recent posts module*/
 
 /* Side bar */
 .sidebar{
@@ -549,3 +556,98 @@ body{
 	clear: right;
 }
 /*Category Page */
+
+/*Recent posts module*/
+.newest-post-container {
+	margin-top: 30px;
+}
+
+.newest-post-container .group-title {
+	color: #ffffff;
+	background-color: #00a1ed;
+	padding: 5px;
+	position: relative;
+	width: 80%;
+	text-transform: uppercase;
+	text-align: center;
+	left: 10%;
+}
+
+.newest-post-container .group-title:after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 50px solid #f6f6f6;
+	border-left: 50px solid transparent;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+}
+
+.newest-post-container .group-title:before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 50px solid #f6f6f6;
+	border-right: 50px solid transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+}
+
+
+.newest-post-row {
+	margin-top: 20px;
+}
+
+.newest-post-item {
+	margin-bottom: 20px;
+}
+
+@media (min-width: 768px){
+	.newest-post-container .group-title{
+		width: 50%;
+		left: 25%;
+	}
+}
+
+@media (min-width: 992px) {
+	.newest-post-container .group-title{
+		width: 30%;
+		left: 35%;
+	}
+}
+/*End recent posts module*/
+
+/*Slick */
+
+.slick-dots {
+	padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.slick-dots li {
+	display: inline-block;
+	margin: 5px;
+}
+
+.slick-dots li button {
+    border: 0 none;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #4d4d4d;
+    display: block;
+    font-size: 0;
+    outline: 0 none;
+}
+
+.slick-dots li.slick-active button,
+.slick-dots li button:active {
+    background: #00a1ed;
+}
+
+/* Slick*/

@@ -451,44 +451,56 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
     return '<h2>' . $content . '</h2>';
 }
 
+function get_the_excerpt_custom($post_id) {
+  global $post;  
+  $save_post = $post;
+  $post = get_post($post_id);
+  $output = get_the_excerpt($post);
+  $post = $save_post;
+  return $output;
+}
+
 function get_newest_posts($numberposts)
 {
+    echo "<div class='container newest-post-container'>
+            <div class ='row'>
+                <div class='col-xs-12'>
+                    <div class='group-title-wrapper'>
+                        <div class='group-title'>
+                            <h4>BÀI VIẾT MỚI NHẤT</h4>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+            <div class = 'row newest-post-row' id='newest-post'>
+        ";
+
 	$input = array(
-		'numberposts' => $numberposts,
-		'offset' => 0,
-		'category' => 0,
-		'orderby' => 'post_date',
-		'order' => 'DESC',
-		'include' => '',
-		'exclude' => '',
-		'meta_key' => '',
-		'meta_value' =>'',
-		'post_type' => 'post',
-		'post_status' => 'publish',
-		'suppress_filters' => true
+        'posts_per_page'   => $numberposts,
+        'orderby'          => 'date',
+        'order'            => 'DESC',
+        'post_type'        => 'post',
+        'post_status'      => 'publish',
 	);
 	
-	$newest_posts = wp_get_recent_posts( $input, ARRAY_A );
-	
-	?>
-	<div class="container">
-		<div class="col-sm-12 text-center">
-			<div class="row">
-				<div class="col-sm-12 newpost-title">
-					<img class="text-center" src="<?php echo get_template_directory_uri(); ?>/img/titleblock.png"/>
-				</div>
-			</div>
-			<div>
-			<?php
-			foreach ($newest_posts as $post)
-			{
-				the_post_thumbnail( 'post-thumbnail', '' );
-			}
-			?>
-			</div>
-		</div>
-	</div>
-	<?php
+	$newest_posts = get_posts( $input );
+    global $post;
+    foreach ($newest_posts as $post ):
+
+        setup_postdata($post);
+    ?>
+        <div class="col-sm-4 newest-post-item">
+            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                <?php the_post_thumbnail('thumbnail'); // Declare pixel size you need inside the array ?>
+            </a>
+            <h4>
+                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+            </h4>
+            <p><?php echo the_excerpt(); ?></p>
+        </div>
+    <?php
+        endforeach;
+    echo "</div></div>";
 }
-?>
+
 	
