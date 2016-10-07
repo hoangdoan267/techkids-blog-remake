@@ -355,7 +355,28 @@ body{
 }
 
 /* Single page begin */
+.author-detail {
+	margin-bottom: 10px;
+}
 
+.social-list{
+	font-size: 22px;
+    text-align: right;
+	margin-top: 5px;
+	padding-right: 0px;
+}
+
+.twitter {
+	color: #00a1ed;
+}
+
+.google-plus{
+	color: #ed0006;
+}
+
+.facebook{
+	color: #007bed;
+}
 /* Single page end */
 
 /* Side bar */
