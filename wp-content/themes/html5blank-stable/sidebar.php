@@ -10,7 +10,7 @@
 		<?php
 			$categories = array(
 				'orderby' => 'id',
-				'exclude' => '1',
+				'exclude' => array('1','7'),
       			'hide_empty'=> 0
 			); 
 			$list = get_categories($categories);

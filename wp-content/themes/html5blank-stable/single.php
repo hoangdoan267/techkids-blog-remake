@@ -13,8 +13,15 @@
 								$link = get_category_link( get_the_category(get_the_ID())[0]->term_id );
 							?>
 							<a href="<?php echo esc_url($link);?>">							
-							<?php								
-								echo get_the_category(get_the_ID())[0]->name;
+							<?php		
+								$post_categories =get_the_category(get_the_ID());					
+								foreach ($post_categories as $category) {
+								 	if ($category->term_id != 7)
+								 	{
+								 		echo $category->name;
+								 		break;
+								 	}
+								 } ;
 							?>
 							</a>
 							 |
@@ -43,9 +50,8 @@
 				<?php endwhile; endif; ?>
 			</div>
 				<?php get_sidebar(); ?>
-				<?php /*get_newest_posts(3); */?>
 		</div>
 	</div>
 
-	<?php get_newest_posts(3); ?>
+	<?php get_special_posts(3,''); ?>
 <?php get_footer(); ?>

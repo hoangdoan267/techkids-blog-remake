@@ -460,14 +460,22 @@ function get_the_excerpt_custom($post_id) {
   return $output;
 }
 
-function get_newest_posts($numberposts)
+function get_special_posts($numberposts, $feature)
 {
+    if ($feature != '') {
+
+        $title = 'BÀI VIẾT TIÊU BIỂU';
+    }
+    else {
+        $title = 'BÀI VIẾT MỚI NHẤT';
+    }
+
     echo "<div class='container newest-post-container'>
             <div class ='row'>
                 <div class='col-xs-12'>
                     <div class='group-title-wrapper'>
                         <div class='group-title'>
-                            <h4>BÀI VIẾT MỚI NHẤT</h4>
+                            <h4>".$title."</h4>
                         </div>      
                     </div>
                 </div>
@@ -481,6 +489,7 @@ function get_newest_posts($numberposts)
         'order'            => 'DESC',
         'post_type'        => 'post',
         'post_status'      => 'publish',
+        'category'         => $feature
 	);
 	
 	$newest_posts = get_posts( $input );
